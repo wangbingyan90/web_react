@@ -1,5 +1,6 @@
-import Child from './Child'
+import IndexRouter from './router/IndexRouter'
 import './App.css'
+
 import { useEffect } from 'react';
 import axios from 'axios'
 
@@ -16,18 +17,7 @@ function App() {
   }, [])
 
   return (
-    <div>
-      app
-      <ul>
-        <li>
-          11111
-        </li>
-        <li>
-          2222
-        </li>
-      </ul>
-      <Child />
-    </div>
+    <IndexRouter/>
   );
 }
 
