@@ -1,42 +1,31 @@
 {
   "posts": [
     {
-      "title": "123-x修改",
-      "author": "asdas",
-      "id": 1
+        "key":"/home",
+        "title":"首页"
     },
     {
-      "id": 2,
-      "title": "json-server",
-      "author": "typicode"
+        "key":"/user-manage",
+        "title":"用户管理",
+        "children":[{
+            "key":"/user-manage/list",
+            "title":"用户列表"
+        }]
     },
     {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "title": "123",
-      "author": "asdas",
-      "id": 5
-    },
-    {
-      "title": "123",
-      "author": "asdas",
-      "id": 6
-    },
-    {
-      "title": "123",
-      "author": "asdas",
-      "id": 7
-    },
-    {
-      "title": "123",
-      "author": "asdas",
-      "id": 8
+        "key":"/right-manage",
+        "title":"权限管理",
+        "children":[{
+            "key":"/right-manage/role/list",
+            "title":"角色列表"
+        },
+        {
+            "key":"/right-manage/right/list",
+            "title":"权限列表"
+        }
+    ]
     }
-  ],
+],
   "comments": [
     {
       "id": 12,
