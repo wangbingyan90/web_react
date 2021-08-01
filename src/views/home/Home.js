@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'antd';
-// import axiso from 'axios'
+import axios from 'axios';
 
 export default function Home() {
 
@@ -11,16 +11,26 @@ export default function Home() {
         //         console.log(res.data)
         //     }
         // )
-        // //增加
-        // axiso.post("http://localhost:8000/posts",
-        //     {
-        //         title:"123",
-        //         author:"asdas"
-        //     }
-        // ).then(
-        //     res=>{
-        //         console.log(res.data)
-        //     })
+        // // 增加
+        console.log("value")
+        axios.post("http://127.0.0.1:1430/prepare",{
+            "config_path": "C:/Users/Administrator/Desktop/wby_hait_client.json",
+            "user": "4920026861",
+            "password": "123321",
+            "exe_path": null,
+            "comm_password": null,
+            "kwargs": {},
+            "broker": "ht_client"
+          },{
+            'headers':{
+                'content_type': 'application/json', 
+                'Content-Type': 'text/plain'
+            }
+          }
+        ).then(
+            res=>{
+                console.log(res.data)
+            })
         // //全改
         // axiso.put("http://localhost:8000/posts/1",
         //     {
